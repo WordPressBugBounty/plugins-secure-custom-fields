@@ -4,7 +4,7 @@ Tags: fields, custom fields, meta, scf
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 6.4.1-beta6
+Stable tag: 6.4.1-beta7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,8 @@ Beyond custom fields, SCF allows you to register new post types and taxonomies d
 The field interface aligns with WordPress’s native design, creating an experience that’s both accessible and easy for content creators to use.
 
 Installing this plugin will deactivate plugins with matching function names/functionality, specifically Advanced Custom Fields, Advanced Custom Fields Pro, and the legacy Secure Custom Fields plugins, to avoid code errors.
+
+Read more about Secure Custom Fields at [developer.wordpress.org/secure-custom-fields](https://developer.wordpress.org/secure-custom-fields/).
 
 = Features =
 * Clear and easy-to-use setup
@@ -81,5 +83,5 @@ This plugin builds upon and is a fork of the previous work done by the contribut
 
 == Upgrade Notice ==
 
-= 6.4.1-beta6 =
-Corrects issue where Options page would not display in wp-admin and a missing function from the Clone field.
+= 6.4.1-beta7 =
+Corrects issue with syncing SCF options via JSON files.
