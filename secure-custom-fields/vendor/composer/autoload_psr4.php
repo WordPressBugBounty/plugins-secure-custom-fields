@@ -10,6 +10,7 @@ return array(
     'SCF\\Meta\\' => array($baseDir . '/includes/Meta'),
     'SCF\\Forms\\' => array($baseDir . '/includes/forms'),
     'SCF\\Fields\\FlexibleContent\\' => array($baseDir . '/includes/fields/FlexibleContent'),
+    'SCF\\Datastore\\' => array($baseDir . '/includes/Datastore'),
     'SCF\\CLI\\' => array($baseDir . '/src/CLI'),
     'SCF\\Blocks\\' => array($baseDir . '/includes/Blocks'),
     'SCF\\AI\\' => array($baseDir . '/src/AI'),

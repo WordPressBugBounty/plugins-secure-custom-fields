@@ -13,6 +13,7 @@ class ComposerStaticInitb858699864578c66b2ddae4494f7a6e4
             'SCF\\Meta\\' => 9,
             'SCF\\Forms\\' => 10,
             'SCF\\Fields\\FlexibleContent\\' => 27,
+            'SCF\\Datastore\\' => 14,
             'SCF\\CLI\\' => 8,
             'SCF\\Blocks\\' => 11,
             'SCF\\AI\\' => 7,
@@ -39,6 +40,10 @@ class ComposerStaticInitb858699864578c66b2ddae4494f7a6e4
         'SCF\\Fields\\FlexibleContent\\' => 
         array (
             0 => __DIR__ . '/../..' . '/includes/fields/FlexibleContent',
+        ),
+        'SCF\\Datastore\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/includes/Datastore',
         ),
         'SCF\\CLI\\' => 
         array (
@@ -116,8 +121,13 @@ class ComposerStaticInitb858699864578c66b2ddae4494f7a6e4
         'SCF\\AI\\GEO\\Schema' => __DIR__ . '/../..' . '/src/AI/GEO/Schema.php',
         'SCF\\AI\\GEO\\SchemaData' => __DIR__ . '/../..' . '/src/AI/GEO/SchemaData.php',
         'SCF\\Blocks\\Bindings' => __DIR__ . '/../..' . '/includes/Blocks/Bindings.php',
+        'SCF\\Blocks\\Bindings_Editor' => __DIR__ . '/../..' . '/includes/Blocks/Bindings_Editor.php',
         'SCF\\CLI\\CLI' => __DIR__ . '/../..' . '/src/CLI/CLI.php',
         'SCF\\CLI\\JsonCommand' => __DIR__ . '/../..' . '/src/CLI/JsonCommand.php',
+        'SCF\\Datastore\\Check_Screen' => __DIR__ . '/../..' . '/includes/Datastore/Check_Screen.php',
+        'SCF\\Datastore\\Localization' => __DIR__ . '/../..' . '/includes/Datastore/Localization.php',
+        'SCF\\Datastore\\REST_Save' => __DIR__ . '/../..' . '/includes/Datastore/REST_Save.php',
+        'SCF\\Datastore\\Revisions' => __DIR__ . '/../..' . '/includes/Datastore/Revisions.php',
         'SCF\\Fields\\FlexibleContent\\Layout' => __DIR__ . '/../..' . '/includes/fields/FlexibleContent/Layout.php',
         'SCF\\Fields\\FlexibleContent\\Render' => __DIR__ . '/../..' . '/includes/fields/FlexibleContent/Render.php',
         'SCF\\Forms\\WC_Order' => __DIR__ . '/../..' . '/includes/forms/WC_Order.php',

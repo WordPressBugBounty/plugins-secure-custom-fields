@@ -3073,7 +3073,7 @@ function BlockEditInner(props) {
         acfFormRef: acfFormRef,
         userHasInteractedWithForm: userHasInteractedWithForm,
         attributes: attributes,
-        hideFieldsInSidebar: blockType?.auto_inline_editing && blockType?.hide_fields_in_sidebar === undefined && inspectorControlsRef.current === currentFormContainer || blockType?.hide_fields_in_sidebar && inspectorControlsRef.current === currentFormContainer
+        hideFieldsInSidebar: blockType?.auto_inline_editing && blockType?.hide_fields_in_sidebar === undefined && currentFormContainer === inspectorControlsRef.current || blockType?.hide_fields_in_sidebar && currentFormContainer === inspectorControlsRef.current
       }), freezeInlineToolbarDuringReRender && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("style", {
         children: `.acf-inline-editing-toolbar{${freezeInlineToolbarDuringReRender}}`
       })]

@@ -1022,7 +1022,9 @@
       return this.$('.acf-gallery-attachment');
     },
     $attachment: function (id) {
-      return this.$('.acf-gallery-attachment[data-id="' + id + '"]');
+      return this.$attachments().filter(function () {
+        return String($(this).data('id')) === String(id);
+      });
     },
     $active: function () {
       return this.$('.acf-gallery-attachment.active');
@@ -1052,6 +1054,19 @@
 
       // return
       return val.length ? val : false;
+    },
+    setValue: function (value) {
+      if (!Array.isArray(value)) {
+        value = value ? [value] : [];
+      }
+      this.closeSidebar();
+      this.$attachments().remove();
+      value.forEach(id => {
+        this.appendAttachment({
+          id
+        });
+      });
+      this.render();
     },
     addUnscopedEvents: function (self) {
       // invalidField
@@ -1214,7 +1229,8 @@
       }
 
       // html
-      var html = ['<div class="acf-gallery-attachment" data-id="' + attachment.id + '">', '<input type="hidden" value="' + attachment.id + '" name="' + this.getInputName() + '[]">', '<div class="margin" title="">', '<div class="thumbnail">', '<img src="" alt="">', '</div>', '<div class="filename"></div>', '</div>', '<div class="actions">', '<a href="#" class="acf-icon -cancel dark acf-gallery-remove" data-id="' + attachment.id + '"></a>', '</div>', '</div>'].join('');
+      const escapedId = acf.strEscape(String(attachment.id));
+      var html = ['<div class="acf-gallery-attachment" data-id="' + escapedId + '">', '<input type="hidden" value="' + escapedId + '" name="' + this.getInputName() + '[]">', '<div class="margin" title="">', '<div class="thumbnail">', '<img src="" alt="">', '</div>', '<div class="filename"></div>', '</div>', '<div class="actions">', '<a href="#" class="acf-icon -cancel dark acf-gallery-remove" data-id="' + escapedId + '"></a>', '</div>', '</div>'].join('');
       var $html = $(html);
 
       // append
