@@ -4,7 +4,7 @@ Tags: fields, custom fields, meta, scf
 Requires at least: 6.2
 Tested up to: 6.9.1
 Requires PHP: 7.4
-Stable tag: 6.8.5
+Stable tag: 6.8.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,12 +51,19 @@ This plugin builds upon and is a fork of the previous work done by the contribut
 
 
 == Changelog ==
+= 6.8.7 =
+*Release Date 8th June 2026*
+
+*Fixes*
+
+- SCF's Abilities API integration for its internal post types no longer triggers PHP warnings, notices, or a fatal error (500) on block editor and REST API requests when another active plugin builds the WordPress abilities registry earlier in the request; registration is skipped cleanly in that case and normal abilities behavior is otherwise unchanged.
+
 = 6.8.6 =
 *Release Date 27th May 2026*
 
 *Security*
 
-- Hardened authorization on the oEmbed field's AJAX search endpoint. The endpoint now requires an authenticated user with content-authoring capability; the legacy unauthenticated entry point is deprecated and will be removed in a future release.
+- Hardened the oEmbed field's AJAX preview handling by restricting provider discovery for visitors and users without content-authoring capability while preserving previews from WordPress's registered oEmbed providers.
 - Hardened front-end `acf_form()` submission processing so the `post_title` and `post_content` form options are respected on save, and the save pipeline only accepts values for fields the rendered form exposed. A new `acf/form/allowed_field_keys` filter is available for sites that legitimately extend a form at runtime.
 
 = 6.8.5 =

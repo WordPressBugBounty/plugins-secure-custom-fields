@@ -28,7 +28,7 @@
                 "bin/validate-json"
             ],
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "JsonSchema\\": "src/JsonSchema/"
