@@ -4,7 +4,7 @@ Tags: fields, custom fields, meta, scf
 Requires at least: 6.2
 Tested up to: 6.9.1
 Requires PHP: 7.4
-Stable tag: 6.8.7
+Stable tag: 6.8.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,17 @@ This plugin builds upon and is a fork of the previous work done by the contribut
 
 
 == Changelog ==
+= 6.8.9 =
+*Release Date 15th June 2026*
+
+*Security*
+
+- Hardened the escaping of wp_options LIKE queries used when loading option-page meta and during taxonomy term cleanup, switching to esc_like() so option-name prefixes are always matched as literals rather than as patterns.
+
+*Fixes*
+
+- The URL, text, textarea, and select-style fields no longer raise PHP errors when a non-scalar value (such as an array) is submitted; such input is now treated as invalid.
+
 = 6.8.8 =
 *Release Date 11th June 2026*
 
