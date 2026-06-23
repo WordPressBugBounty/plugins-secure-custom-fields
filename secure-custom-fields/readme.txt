@@ -2,9 +2,9 @@
 Contributors: wordpressdotorg
 Tags: fields, custom fields, meta, scf
 Requires at least: 6.2
-Tested up to: 6.9.1
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 6.8.8
+Stable tag: 6.8.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,20 @@ This plugin builds upon and is a fork of the previous work done by the contribut
 
 
 == Changelog ==
+= 6.9.0 =
+*Release Date 23rd June 2026*
+
+*Hardening*
+
+- Improved input validation when duplicating field groups, post types, and taxonomies, including ownership and type checks on the target.
+- Restricted persistence of custom choices on checkbox, radio, and select fields to authorized users.
+- Constrained the field update ability input schema to known properties.
+- Sanitized flexible content layout labels and cleaned up orphaned row meta on layout removal.
+- Hardened REST type field-group metadata exposure and oEmbed source formatting.
+- Normalized non-scalar block binding attribute values.
+- Required authentication and nonce verification before saving fields on WooCommerce orders.
+- Preserved localization wrappers in PHP exports and corrected nav menu field ID output.
+
 = 6.8.9 =
 *Release Date 15th June 2026*
 
