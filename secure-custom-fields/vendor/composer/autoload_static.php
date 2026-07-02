@@ -7,7 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInitb858699864578c66b2ddae4494f7a6e4
 {
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'S' =>
         array (
             'SCF\\Site_Health\\' => 16,
             'SCF\\Meta\\' => 9,
@@ -18,46 +18,46 @@ class ComposerStaticInitb858699864578c66b2ddae4494f7a6e4
             'SCF\\Blocks\\' => 11,
             'SCF\\AI\\' => 7,
         ),
-        'J' => 
+        'J' =>
         array (
             'JsonSchema\\' => 11,
         )
     );
 
     public static $prefixDirsPsr4 = array (
-        'SCF\\Site_Health\\' => 
+        'SCF\\Site_Health\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src/Site_Health',
         ),
-        'SCF\\Meta\\' => 
+        'SCF\\Meta\\' =>
         array (
             0 => __DIR__ . '/../..' . '/includes/Meta',
         ),
-        'SCF\\Forms\\' => 
+        'SCF\\Forms\\' =>
         array (
             0 => __DIR__ . '/../..' . '/includes/forms',
         ),
-        'SCF\\Fields\\FlexibleContent\\' => 
+        'SCF\\Fields\\FlexibleContent\\' =>
         array (
             0 => __DIR__ . '/../..' . '/includes/fields/FlexibleContent',
         ),
-        'SCF\\Datastore\\' => 
+        'SCF\\Datastore\\' =>
         array (
             0 => __DIR__ . '/../..' . '/includes/Datastore',
         ),
-        'SCF\\CLI\\' => 
+        'SCF\\CLI\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src/CLI',
         ),
-        'SCF\\Blocks\\' => 
+        'SCF\\Blocks\\' =>
         array (
             0 => __DIR__ . '/../..' . '/includes/Blocks',
         ),
-        'SCF\\AI\\' => 
+        'SCF\\AI\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src/AI',
         ),
-        'JsonSchema\\' => 
+        'JsonSchema\\' =>
         array (
             0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
         )
