@@ -3,7 +3,7 @@
         'name' => 'wordpress/secure-custom-fields',
         'pretty_version' => 'dev-trunk',
         'version' => 'dev-trunk',
-        'reference' => 'eee3e1b1463948832268aa8cd208f6968a923f85',
+        'reference' => '354e8cdd5c513cc7bd8e828b4a54bbad98350941',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'wordpress/secure-custom-fields' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => 'eee3e1b1463948832268aa8cd208f6968a923f85',
+            'reference' => '354e8cdd5c513cc7bd8e828b4a54bbad98350941',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
